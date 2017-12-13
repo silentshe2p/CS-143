@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CS143 Project 1B</title>
+    <link type="text/css" rel="stylesheet" href="./main.css"/>    
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="./main.html">Project 1B</a>
+        <div class="dropdown">
+            <button class="drop_btn" onclick="show_add()">Adding to Database</button>
+            <div class="drop_content" id="my_add">
+                <a href="./add_actor_director.php">Add Actor/Director</a>
+                <a href="./add_movie.php">Add Movie</a>
+                <a href="./add_comment.php">Add Comment</a>
+                <a href="./add_actor-movie.php">Add Actor-Movie</a>
+                <a href="./add_director-movie.php">Add Director-Movie</a>
+            </div>
+        </div>
+
+        <div class="search">
+            <form action="./search.php" method="GET">
+                <input class="search_box" type="text" name="input" placeholder="Your favorite Actor/Actress/Movie">
+                <input class="search_btn" type="submit" value="search"/>
+            </form>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+
+    <h1>CS143 Project 1B</h1>
+</body>
+</html>

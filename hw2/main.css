@@ -1,0 +1,102 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .drop_btn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .drop_btn {
+    background-color: green;
+}
+
+.drop_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.drop_content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.drop_content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.search {
+    position: relative
+}
+
+.search_box {
+    float: left;
+    width: 40%;
+    border: 3px solid green;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+}
+
+.search_btn {
+    float: left;
+    border: 3px solid green;
+    background: green;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.actor_rs {
+    float: left;
+    width: 50%;
+}
+
+.movie_rs {
+    float: right;
+    width: 50%;
+}
+
+.comment {
+    padding-left: 2em;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
