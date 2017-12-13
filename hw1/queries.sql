@@ -9,8 +9,8 @@ WHERE Movie.title = 'Death to Smoochy') AS Nq ON Actor.id = Nq.aid;
 -- Q2: Count of all directors who directed at least 4 movies
 
 SELECT DISTINCT COUNT(Ct.did) AS Directed_aleast_4 FROM
-(SELECT did, COUNT(mid) FROM MovieDirector GROUP BY did) AS Ct
-WHERE Ct.did >= 4;
+(SELECT did, COUNT(mid) as mcount FROM MovieDirector GROUP BY did) AS Ct
+WHERE Ct.mcount >= 4;
 
 -- Q3: Names of all the movies with both IMDb and Rotten Tomatoes rating > 90
 
