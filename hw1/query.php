@@ -21,7 +21,7 @@
 			or die ("Could not connect: ".mysql_error());
 
 		mysql_select_db ("CS143", $db_connection)
-			or die ("Could not select database");
+			or die ("Could not select database".mysql_error());
 
 		$rs = mysql_query($query, $db_connection)
 			or die ("Query failed: ".mysql_error());
